@@ -27,7 +27,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'C:\Files\Azure\Agent\3\s'
+    SourceFolder: 'D:\CiCD Agent\4\s'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
