@@ -25,14 +25,15 @@ steps:
     command: 'publish'
     publishWebProjects: true
 
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: 'C:\Agentpool\Work_directory\1\s'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: 'C:\Agentpool\Work_directory\1\s'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+#use if pathtopublish is not working properly
+#- task: CopyFiles@2
+#  inputs:
+#    SourceFolder: ''
+#    Contents: '**'
+#    TargetFolder: '$(Build.ArtifactStagingDirectory)'
