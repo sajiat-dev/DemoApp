@@ -27,7 +27,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'D:\CiCD Agent\4\s'
+    SourceFolder: 'C:\Agentpool\Work_directory\1\s'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
