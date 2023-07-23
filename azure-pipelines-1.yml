@@ -14,3 +14,7 @@ steps:
   inputs:
     command: 'build'
     projects: '**/*csproj'
+
+#PAT toke for aws server - woccgxudmuqdmsh4wdkuudnarw2jay4fosm2nvsm4qpn65e75czq
+
+    
